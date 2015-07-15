@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+  <metadata>
+    <id>SharpSerializer</id>
+    <version>2.20</version>
+    <title>SharpSerializer for .NET, Silverlight, WP, WinRT, Xbox</title>
+    <authors>Pawel Idzikowski</authors>
+    <owners>Pawel Idzikowski</owners>
+    <licenseUrl>http://sharpserializer.codeplex.com/license</licenseUrl>
+    <projectUrl>http://sharpserializer.codeplex.com/</projectUrl>
+    <iconUrl>http://www.sharpserializer.com/SharpSerializer032.png</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>SharpSerializer is an open source XML and binary serializer for .NET Framework, Silverlight and as Portable Library for Windows Phone, Windows RT and Xbox. It is especially usefull for tombstoning - i.e. binary serialization to isolated storage in WP7 or WinRT. With only one line of code it can serialize types like: Multidimensional array, nested array, array-of-arrays, polymorphic object (where value is inherited from the property type), generic type, generic listing (i.e. Dictionary, Collection) and many more... Refer to http://www.sharpserializer.com for details.</description>
+    <summary>Open source XML and binary serializer for .NET, Silverlight, WinRT, WP7 (Windows Phone 7) and Xbox 360</summary>
+    <releaseNotes>Portable Library supported</releaseNotes>
+    <copyright />
+    <language>en-US</language>
+    <tags>silverlight serializer wp7 binary xml serialize serialization serializing compact cf repository isolated storage tombstoning xbox winrt</tags>
+  </metadata>
+</package>

@@ -1,0 +1,11 @@
+The Unity SDK is based on the Android and iOS SDKs, so build those first, if needed.
+
+> Android
+- Make sure all local.properties point at the right Android SDK, such as: ~/rsb/splyt-sdk/unity/android/local.properties
+- cd ~/rsb/splyt-sdk/android/build; ant
+- cd ~/rsb/splyt-sdk/unity/build/; ./updateSplytJar.sh; ./buildSplytUnityJar.sh
+- Open Unity (tested with 4.6.2/4.6.3), Open BubblePop sample, Build+Run for Android
+
+> Android Debug
+- adb logcat -s "Unity"
+- In Java, use Log.i("Unity", "Some log message here");

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.Splyt.BubblePop" android:theme="@android:style/Theme.NoTitleBar" android:versionName="1.2" android:versionCode="3" android:installLocation="preferExternal">
+  <supports-screens android:smallScreens="true" android:normalScreens="true" android:largeScreens="true" android:xlargeScreens="true" android:anyDensity="true" />
+  <application android:icon="@drawable/app_icon" android:label="@string/app_name" android:debuggable="false">
+    <activity android:name="com.unity3d.player.UnityPlayerNativeActivity" android:label="@string/app_name" android:screenOrientation="portrait" android:launchMode="singleTask" android:configChanges="mcc|mnc|locale|touchscreen|keyboard|keyboardHidden|navigation|orientation|screenLayout|uiMode|screenSize|smallestScreenSize|fontScale">
+      <intent-filter>
+        <action android:name="android.intent.action.MAIN" />
+        <category android:name="android.intent.category.LAUNCHER" />
+      </intent-filter>
+      <meta-data android:name="unityplayer.UnityActivity" android:value="true" />
+      <meta-data android:name="unityplayer.ForwardNativeEventsToDalvik" android:value="false" />
+    </activity>
+    <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version" />
+    <receiver
+        android:name="com.rsb.splyt.GcmBroadcastReceiver"
+        android:permission="com.google.android.c2dm.permission.SEND">
+        <intent-filter>
+            <action android:name="com.google.android.c2dm.intent.RECEIVE"/>
+            <category android:name="com.rsb.bubblepop"/>
+        </intent-filter>
+    </receiver>
+    <receiver android:name="com.rsb.splyt.GcmUpdateReceiver">
+        <intent-filter>
+            <action android:name="android.intent.action.PACKAGE_REPLACED"/>
+            <data android:path="com.rsb.bubblepop" android:scheme="package"/>
+        </intent-filter>
+        <intent-filter>
+            <action android:name="android.intent.action.BOOT_COMPLETED"/>
+        </intent-filter>
+    </receiver>
+    <service android:name="com.rsb.splyt.GcmIntentService"/>
+  </application>
+  <uses-sdk android:minSdkVersion="15" android:targetSdkVersion="19" />
+  <uses-feature android:glEsVersion="0x00020000" />
+  <uses-permission android:name="android.permission.INTERNET" />
+
+  <!-- ADM uses WAKE_LOCK to keep the processor from sleeping when a message is received. -->
+  <uses-permission android:name="android.permission.WAKE_LOCK"/>
+
+  <!-- This permission allows your app access to receive push notifications from ADM/GCM. -->
+  <uses-permission android:name="com.amazon.device.messaging.permission.RECEIVE"/>
+  <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE"/>
+
+  <!-- This permission ensures that no other application can intercept your ADM/GCM messages. -->
+  <permission android:name="com.rsb.bubblepop.permission.RECEIVE_ADM_MESSAGE" android:protectionLevel="signature"/>
+  <uses-permission android:name="com.rsb.bubblepop.permission.RECEIVE_ADM_MESSAGE"/>
+
+  <permission android:name="com.rsb.bubblepop.permission.C2D_MESSAGE" android:protectionLevel="signature"/>
+  <uses-permission android:name="com.rsb.bubblepop.permission.C2D_MESSAGE"/>
+
+  <!-- This permission allows us to detect when the user performs a system update.
+       Note that this is not required for push notifications to work, but it does guarantee that notifications will still
+       be sent to the device after a system update, even if the user doesn't launch the app.
+  -->
+  <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+</manifest>
