@@ -2,14 +2,14 @@
 using System.Collections;
 using System.Collections.Generic;
 using System.Net;
-using Splyt.External.MiniJSON; 
+using Splyt.External.MiniJSON;
 
 namespace Splyt
 {
     /**
      * <p>Tuning Subsystem</p>
      *
-     * @author Copyright 2014 Row Sham Bow, Inc.
+     * @author Copyright 2015 Knetik, Inc.
      * @version 1.0
      */
     public class TuningSubsystem
@@ -20,7 +20,7 @@ namespace Splyt
 
         /**
          * Performs required initialization for the tuning subsystem
-         * 
+         *
          * @param context Application context to use for caching tuning variable information
          */
         public static void init(Callback cb)
@@ -33,11 +33,11 @@ namespace Splyt
 
             if (null != cb) cb(Error.Success);
         }
-    
+
         public static void refresh(Callback cb)
         {
             Error ret = Error.Success;
-      
+
             if (CoreSubsystem.Initialized)
             {
                 String url = CoreSubsystem.Host + "/isos-personalization/ws/interface/tuner_refresh" + CoreSubsystem.getQueryParms();
@@ -48,7 +48,7 @@ namespace Splyt
                 allArgs.Add(curTimeStamp);
                 allArgs.Add(CoreSubsystem.DeviceId);
                 allArgs.Add(CoreSubsystem.getRegisteredUsers());
-            
+
                 try
                 {
                     // Create an (async) request to retrieve the tuning variables.  The callback will be triggered when the request is completed
@@ -98,7 +98,7 @@ namespace Splyt
                 entityType = Constants.ENTITY_TYPE_USER;
                 entityId = userId;
             }
-        
+
             // Grab the value from the cache
             return sCacheVars.getValue(entityType, entityId, varName, defaultValue);
         }
@@ -316,7 +316,7 @@ namespace Splyt
                 {
                     Storage.Add(type, new Dictionary<string, object>());
                 }
-            
+
                 Dictionary<string, object> typeStorage = Storage[type];
                 if(typeStorage.ContainsKey(id))
                 {
