@@ -118,10 +118,15 @@ namespace Splyt
                 case State.Connect:
                     mState = State.ReadResponse;
 
+                    /*
                     System.Collections.Hashtable headers = new System.Collections.Hashtable(2) {
                         { "ssf-use-positional-post-params", "true" },
                         { "ssf-contents-not-url-encoded", "true" }
                     };
+                    */
+                    Dictionary<string, string> headers = new Dictionary<string, string>();
+                    headers.Add("ssf-use-positional-post-params", "true");
+                    headers.Add("ssf-contents-not-url-encoded", "true");
 
                     mWWW = new WWW(mUrl, System.Text.Encoding.UTF8.GetBytes(mSendData), headers);
                     break;
