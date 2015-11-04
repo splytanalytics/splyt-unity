@@ -4,8 +4,7 @@ doc/html
 bin
 samples/BubblePop/Library
 samples/BubblePop/Temp
-samples/BubblePop/*.csproj
-samples/BubblePop/*.sln
+samples/BubblePop/.vs
 samples/BubblePop/export
 samples/BubblePop/Assets/Plugins
 *.dll
