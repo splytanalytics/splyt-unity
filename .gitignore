@@ -8,3 +8,4 @@ samples/BubblePop/*.csproj
 samples/BubblePop/*.sln
 samples/BubblePop/export
 android/bin
+*.dll

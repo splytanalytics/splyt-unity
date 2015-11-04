@@ -1,0 +1,16 @@
+C:\Users\Admin User\Documents\splyt-unity\unitywp8\Splyt\UnityPlugin\bin\Debug\Splyt.dll
+C:\Users\Admin User\Documents\splyt-unity\unitywp8\Splyt\UnityPlugin\bin\Debug\Splyt.pdb
+C:\Users\Admin User\Documents\splyt-unity\unitywp8\Splyt\UnityPlugin\bin\Debug\UnityEngine.dll
+C:\Users\Admin User\Documents\splyt-unity\unitywp8\Splyt\UnityPlugin\obj\Debug\UnityPlugin.csprojResolveAssemblyReference.cache
+C:\Users\Admin User\Documents\splyt-unity\unitywp8\Splyt\UnityPlugin\obj\Debug\Splyt.dll
+C:\Users\Admin User\Documents\splyt-unity\unitywp8\Splyt\UnityPlugin\obj\Debug\Splyt.pdb
+C:\Users\Admin User\Documents\splyt-unity\SplytUnity\Assets\UnityPlugin\bin\Debug\Splyt.dll
+C:\Users\Admin User\Documents\splyt-unity\SplytUnity\Assets\UnityPlugin\bin\Debug\Splyt.pdb
+C:\Users\Admin User\Documents\splyt-unity\SplytUnity\Assets\UnityPlugin\bin\Debug\UnityEngine.dll
+C:\Users\Admin User\Documents\splyt-unity\SplytUnity\Assets\UnityPlugin\obj\Debug\Splyt.dll
+C:\Users\Admin User\Documents\splyt-unity\SplytUnity\Assets\UnityPlugin\obj\Debug\Splyt.pdb
+C:\Users\Admin User\Documents\splyt-unity\SplytUnity\UnityPlugin\bin\Debug\Splyt.dll
+C:\Users\Admin User\Documents\splyt-unity\SplytUnity\UnityPlugin\bin\Debug\Splyt.pdb
+C:\Users\Admin User\Documents\splyt-unity\SplytUnity\UnityPlugin\bin\Debug\UnityEngine.dll
+C:\Users\Admin User\Documents\splyt-unity\SplytUnity\UnityPlugin\obj\Debug\Splyt.dll
+C:\Users\Admin User\Documents\splyt-unity\SplytUnity\UnityPlugin\obj\Debug\Splyt.pdb
