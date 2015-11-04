@@ -3,6 +3,8 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2015
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SplytUnity.CSharp.Plugins", "SplytUnity.CSharp.Plugins.csproj", "{6338F69D-9640-3FBD-F434-C0CD827D6D2F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SplytUnity.CSharp", "SplytUnity.CSharp.csproj", "{3CDB9C73-1EFD-BA2E-67D1-AACB63B4ADE9}"
+EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SplytUnity.CSharp.Editor", "SplytUnity.CSharp.Editor.csproj", "{60C9062D-25B1-1F04-9C95-629BDC48D6FC}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnityPlugin", "UnityPlugin\UnityPlugin.csproj", "{E31E7A75-CCB8-4FEE-B198-E0660E9411EF}"
@@ -17,6 +19,10 @@ Global
 		{6338F69D-9640-3FBD-F434-C0CD827D6D2F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6338F69D-9640-3FBD-F434-C0CD827D6D2F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6338F69D-9640-3FBD-F434-C0CD827D6D2F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3CDB9C73-1EFD-BA2E-67D1-AACB63B4ADE9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3CDB9C73-1EFD-BA2E-67D1-AACB63B4ADE9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3CDB9C73-1EFD-BA2E-67D1-AACB63B4ADE9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3CDB9C73-1EFD-BA2E-67D1-AACB63B4ADE9}.Release|Any CPU.Build.0 = Release|Any CPU
 		{60C9062D-25B1-1F04-9C95-629BDC48D6FC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{60C9062D-25B1-1F04-9C95-629BDC48D6FC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{60C9062D-25B1-1F04-9C95-629BDC48D6FC}.Release|Any CPU.ActiveCfg = Release|Any CPU

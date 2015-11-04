@@ -2,11 +2,11 @@
 *.userprefs
 *.dll
 doc/html
-samples/BubblePop/Library
-samples/BubblePop/Temp
-samples/BubblePop/.vs
-samples/BubblePop/export
-samples/BubblePop/Assets/Plugins
+SplytUnity/Assets/Samples/BubblePop/Library
+SplytUnity/Assets/Samples/BubblePop/Temp
+SplytUnity/Assets/Samples/BubblePop/.vs
+SplytUnity/Assets/Samples/BubblePop/export
+SplytUnity/Assets/Samples/BubblePop/Assets/Plugins
 SplytUnity/Library
 SplytUnity/Temp
 SplytUnity/.vs

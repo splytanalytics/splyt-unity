@@ -13,9 +13,9 @@ public class Builder
 	static void MakeBPPackage()
 	{
 		List<string> game_files = new List<string> {
-			"../samples/BubblePop/Assets/BubblePop.unity",
-            "../samples/BubblePop/Assets/Resources",
-            "../samples/BubblePop/Assets/Scripts",
+            "Assets/Samples/BubblePop/Assets/BubblePop.unity",
+            "Assets/Samples/BubblePop/Assets/Resources",
+            "Assets/Samples/BubblePop/Assets/Scripts",
 		};
 		game_files.AddRange(splyt_files);
 
