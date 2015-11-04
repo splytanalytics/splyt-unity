@@ -7,5 +7,7 @@ samples/BubblePop/Temp
 samples/BubblePop/*.csproj
 samples/BubblePop/*.sln
 samples/BubblePop/export
-android/bin
+samples/BubblePop/Assets/Plugins
 *.dll
+SplytUnity/.vs
+SplytUnity/Temp

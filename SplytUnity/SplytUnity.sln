@@ -1,12 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 14
-VisualStudioVersion = 14.0.23107.0
-MinimumVisualStudioVersion = 10.0.40219.1
+# Visual Studio 2015
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SplytUnity.CSharp.Plugins", "SplytUnity.CSharp.Plugins.csproj", "{6338F69D-9640-3FBD-F434-C0CD827D6D2F}"
-	ProjectSection(ProjectDependencies) = postProject
-		{E31E7A75-CCB8-4FEE-B198-E0660E9411EF} = {E31E7A75-CCB8-4FEE-B198-E0660E9411EF}
-	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SplytUnity.CSharp.Editor", "SplytUnity.CSharp.Editor.csproj", "{60C9062D-25B1-1F04-9C95-629BDC48D6FC}"
 EndProject
