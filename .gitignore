@@ -1,12 +1,12 @@
 *.pidb
 *.userprefs
+*.dll
 doc/html
-bin
 samples/BubblePop/Library
 samples/BubblePop/Temp
 samples/BubblePop/.vs
 samples/BubblePop/export
 samples/BubblePop/Assets/Plugins
-*.dll
-SplytUnity/.vs
+SplytUnity/Library
 SplytUnity/Temp
+SplytUnity/.vs

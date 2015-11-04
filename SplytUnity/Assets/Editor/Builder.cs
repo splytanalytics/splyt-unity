@@ -12,24 +12,21 @@ public class Builder
 	[MenuItem("Splyt/Export BubblePop Package")]
 	static void MakeBPPackage()
 	{
-		// We are only excluding Builder.cs and PostprocessBuildPlayer.sh, since these should not be a part of the customer sample
 		List<string> game_files = new List<string> {
-			// bubble pop files
-			"Assets/BubblePop.unity",
-			"Assets/Plugins/Android/AndroidManifest.xml",
-			"Assets/Resources",
-			"Assets/Scripts",
+			"../samples/BubblePop/Assets/BubblePop.unity",
+            "../samples/BubblePop/Assets/Resources",
+            "../samples/BubblePop/Assets/Scripts",
 		};
 		game_files.AddRange(splyt_files);
 
-		System.IO.Directory.CreateDirectory(Application.dataPath + "/../bin");
-		AssetDatabase.ExportPackage(game_files.ToArray(), "../../bin/BubblePop.unitypackage", ExportPackageOptions.Recurse);
+		System.IO.Directory.CreateDirectory(Application.dataPath + "/../../dist");
+		AssetDatabase.ExportPackage(game_files.ToArray(), "../dist/BubblePop.unitypackage", ExportPackageOptions.Recurse);
 	}
 
 	[MenuItem("Splyt/Export Splyt Package")]
 	static void MakeSplytPackage()
 	{
-		System.IO.Directory.CreateDirectory(Application.dataPath + "/../../bin");
-		AssetDatabase.ExportPackage(splyt_files, "../bin/Splyt.unitypackage", ExportPackageOptions.Recurse);
+		System.IO.Directory.CreateDirectory(Application.dataPath + "/../../dist");
+		AssetDatabase.ExportPackage(splyt_files, "../dist/Splyt.unitypackage", ExportPackageOptions.Recurse);
 	}
 }
